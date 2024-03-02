@@ -1,21 +1,13 @@
-import Toolbar from "./Toolbar"
+import Sidebar from "./components/Sidebar"
+import SlideDetails from "./components/SlideDetails.js"
 
 function App() {
-  const paragraph = <p>I'm a paragraph {5 + 3}</p>
-
-  const myName = 5 + 3
-
   return (
-    <>
-      <Toolbar/>
-      <div className="bg-primary text-white p-3 m-3">
-        Hi there { myName }{" "}
-        { 5 + 3 }
-        { paragraph }
-      </div>
-    </>
-  )
-  
+    <div className="container-fluid d-flex">
+      <Sidebar/>
+      <SlideDetails/>
+    </div>
+  );
 }
 
-export default App
+export default App;
