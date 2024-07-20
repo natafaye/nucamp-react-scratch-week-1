@@ -1,13 +1,12 @@
-import Sidebar from "./components/Sidebar"
-import SlideDetails from "./components/SlideDetails.js"
+import CartList from "./CartList"
 
-function App() {
+export default function App() {
+  const cart = ["chair", "shoes"]
   return (
-    <div className="container-fluid d-flex">
-      <Sidebar/>
-      <SlideDetails/>
+    <div>
+      <div>Items in Cart: {cart.length}</div>
+      <p>{3 + 5}</p>
+      <CartList shoppingCart={cart}/>
     </div>
-  );
+  )
 }
-
-export default App;
